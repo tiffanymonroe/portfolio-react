@@ -32,11 +32,13 @@ function App() {
       </nav>
       <h1>Tiffany Monroe</h1>
 
+
         <Route exact path="/" component={Hero} />
         <Route path="/about" component={About} />
         <Route path="/technology" component={Technology} />
         <Route path="/work" component={Work} />
         <Route path="/contact" component={Contact} />
+
 
 
     <footer>Made with <i className="fas fa-coffee"></i> by Tiffany Monroe</footer>

@@ -160,21 +160,32 @@ nav ul li:hover {
   justify-content: space-between;
 }
 
-.img-container p {
-
+.responsive-img {
+  width: 80%;
+  height: auto;
 }
-
+.upworthy .half-width {
+  min-height: 1204px;
+}
+.upworthy .header {
+  font-weight: 700;
+}
 #upworthy-logo {
   width: 50%;
 }
-#upworthy{
+
+.swaay .third-width {
+  max-height: 250px;
+  overflow: scroll;
+}
+.swaay .row {
+  padding: 1em;
+  margin-bottom: 2em;
 }
 #swaay-logo {
   width: 75%;
 }
-#swaay{
-  
-}
+
 /* Contact */
 #contact-img {
   height: auto;
