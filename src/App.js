@@ -13,7 +13,6 @@ import {
 import About from './About'
 import Technology from './Technology'
 import Contact from './Contact'
-import Resume from './Resume'
 import Work from './Work'
 
 
@@ -28,7 +27,7 @@ function App() {
               <li><a href="#tech">Technology</a></li>
               <li><a href="#work">Work</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="http://www.tiffanymonroe.com/tiffany_monroe_resume_jun2019.pdf" target="_blank">Résumé</a></li>
+              <li><a href="/resume">Résumé</a></li>
           </ul>
       </nav>
       <h1>Tiffany Monroe</h1>
