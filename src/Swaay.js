@@ -12,7 +12,6 @@ const terms = require("./img/projects/swaay/swaay-terms-full.png")
 class Swaay extends Component {
   render(){
     return(
-      <div>
         <section class="swaay">
           <p>Designed and built pages based on branding.</p>
           <div class="row">
@@ -33,12 +32,8 @@ class Swaay extends Component {
             <div className="third-width">
               <a href="https://www.swaay.com/terms-of-use"><img class="responsive-img" src={terms} alt="Swaay Terms of Use"/></a>
             </div>
-
-
           </div>
-
-</section>
-      </div>
+      </section>
     )
   }
 }
