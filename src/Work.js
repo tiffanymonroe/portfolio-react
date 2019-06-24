@@ -10,10 +10,12 @@ import {
 //components
 import Swaay from './Swaay'
 import Upworthy from './Upworthy'
+import More from './More'
 
 //images
 const swaayLogo = require('./img/projects/swaay/swaay-logo.png')
 const upworthyLogo = require("./img/projects/upworthy/upworthy-logo.png")
+
 
 class Work extends Component {
   render(){
@@ -21,24 +23,28 @@ class Work extends Component {
     <Router>
       <div className="full-width" id="work">
         <h2>Portfolio</h2>
-          <div className="row">
-
-            <div className="half-width img-container upworthy">
-              <Link to="upworthy"><img id="upworthy-logo" className="logo" src={upworthyLogo} alt="upworthy"/></Link>
-              <p className="description">HTML, CSS, CMS</p>
+            <div className="row">
+              <div className="half-width img-container upworthy">
+                <Link to="upworthy"><img id="upworthy-logo" className="logo" src={upworthyLogo} alt="upworthy"/></Link>
+                <p className="description">HTML, CSS, CMS</p>
+              </div>
+              <div className="half-width img-container swaay">
+                  <Link to="swaay"><img id="swaay-logo" className="logo" src={swaayLogo} alt="swaay media"/></Link>
+                  <p className="description">HTML, CSS, CMS</p>
+              </div>
             </div>
-
-            <div className="half-width img-container swaay">
-              <Link to="swaay"><img id="swaay-logo" className="logo" src={swaayLogo} alt="swaay media"/></Link>
-              <p className="description">HTML, CSS, CMS</p>
+            <div className="row">
+              <Link to="/more">More</Link>
             </div>
-          </div>
 
             <div className="row">
-            <Route path="/upworthy" component={Upworthy}/>
-            <Route path="/swaay" component={Swaay}/>
+              <Route path="/upworthy" component={Upworthy}/>
+              <Route path="/swaay" component={Swaay}/>
+              <Route path="/more" component={More}/>
             </div>
-      </div>
+
+
+</div>
     </Router>
     )
   }
