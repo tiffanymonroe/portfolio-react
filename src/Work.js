@@ -21,8 +21,7 @@ class Work extends Component {
   render(){
     return(
     <Router>
-      <div className="full-width" id="work">
-        <h2>Portfolio</h2>
+    <section className="work">
             <div className="row">
               <div className="half-width img-container upworthy">
                 <Link to="upworthy"><img id="upworthy-logo" className="logo" src={upworthyLogo} alt="upworthy"/></Link>
@@ -34,7 +33,7 @@ class Work extends Component {
               </div>
             </div>
             <div className="row">
-              <Link to="/more">More</Link>
+              <Link to="/more">More Projects</Link>
             </div>
 
             <div className="row">
@@ -44,7 +43,7 @@ class Work extends Component {
             </div>
 
 
-</div>
+    </section>
     </Router>
     )
   }
